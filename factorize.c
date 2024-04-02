@@ -4,7 +4,9 @@
 
 void factorize(int num)
 {
-	for (int i = 2; i <= sqrt(num); i++)
+	int i;
+
+	for (i = 2; i <= square_root(num); i++)
 	{
 		if (num % i == 0)
 		{

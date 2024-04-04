@@ -2,7 +2,7 @@
 #include <math.h>
 #include "factors.h"
 
-void factorize(int num)
+void factorize(long int num)
 {
 	int i;
 
@@ -10,8 +10,8 @@ void factorize(int num)
 	{
 		if (num % i == 0)
 		{
-			int factor1 = i;
-			int factor2 = num / i;
+			long int factor1 = i;
+			long int factor2 = num / i;
 			printf("%d=%d*%d\n", num, factor1, factor2);
 			return;
 		}

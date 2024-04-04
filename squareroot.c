@@ -1,8 +1,9 @@
 #include "factors.h"
 
-int square_root(int n) {
-    int x = n;
-    int root = 1;
+int square_root(long int n)
+{
+    long int x = n;
+    long int root = 1;
     double precision = 0.000001; 
 
     while (x - root > precision) {

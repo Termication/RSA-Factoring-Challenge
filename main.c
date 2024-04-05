@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	long int num;
+	long long int num;
 	FILE *file = fopen(argv[1], "r");
 
 	if (argc != 2) {

@@ -2,16 +2,16 @@
 #include <math.h>
 #include "factors.h"
 
-void factorize(long long int num)
+void factorize(long int num)
 {
-	long long int i;
+	long int i;
 
 	for (i = 2; i <= square_root(num); i++)
 	{
 		if (num % i == 0)
 		{
-			long long int factor1 = i;
-			long long int factor2 = num / i;
+			long int factor1 = i;
+			long int factor2 = num / i;
 			printf("%d=%d*%d\n", num, factor1, factor2);
 			return;
 		}

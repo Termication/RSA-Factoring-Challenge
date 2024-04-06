@@ -5,8 +5,10 @@
  *
  * Return: 1 if prime, 0 otherwise
  */
-int isPrime(long long num)
+int isPrime(long int num)
 {
+	long int i;
+
 	if(num <= 1)
 		return 0;
 	if(num <= 3)
@@ -15,7 +17,7 @@ int isPrime(long long num)
 	if(num % 2 == 0 || num % 3 == 0)
 		return 0;
 
-	for(long long i = 5; i * i <= num; i += 6)
+	for(i = 5; i * i <= num; i += 6)
 	{
 		if(num % i == 0 || num % (i + 2) == 0)
 			return 0;
@@ -28,9 +30,11 @@ int isPrime(long long num)
  * findPrimeFactors - Finds and prints prime factors of n
  * @n: The number for which prime factors are to be found
  */
-void findPrimeFactors(long long n)
+void findPrimeFactors(long int n)
 {
-	for(long long i = 2; i * i <= n; i++)
+	long int i;
+
+	for(i = 2; i * i <= n; i++)
 	{
 		if(n % i == 0 && isPrime(i))
 		{

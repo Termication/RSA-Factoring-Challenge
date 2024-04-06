@@ -9,6 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
+	long int n;
+
 	if (argc != 2) 
 	{
 		printf("Usage: %s <input_file>\n", argv[0]);
@@ -21,8 +23,6 @@ int main(int argc, char *argv[])
 		perror("Error opening file");
 		return (1);
 	}
-
-	long long n;
 	while (fscanf(file, "%lld", &n) != EOF)
 	{
 		findPrimeFactors (n);

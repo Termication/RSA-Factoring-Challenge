@@ -10,6 +10,7 @@
 int main(int argc, char *argv[])
 {
 	long int n;
+	FILE *file = fopen(argv[1], "r");
 
 	if (argc != 2) 
 	{
@@ -17,13 +18,12 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	FILE *file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
 		perror("Error opening file");
 		return (1);
 	}
-	while (fscanf(file, "%lld", &n) != EOF)
+	while (fscanf(file, "%ld", &n) != EOF)
 	{
 		findPrimeFactors (n);
 	}

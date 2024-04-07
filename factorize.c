@@ -12,9 +12,9 @@ void factorize(long int num)
 		{
 			long int factor1 = i;
 			long int factor2 = num / i;
-			printf("%d=%d*%d\n", num, factor1, factor2);
+			printf("%ld=%ld*%ld\n", num, factor1, factor2);
 			return;
 		}
 	}
-	printf("%d=%d*1\n", num, num);
+	printf("%ld=%ld*1\n", num, num);
 }

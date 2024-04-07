@@ -38,7 +38,7 @@ void findPrimeFactors(long int n)
 	{
 		if(n % i == 0 && isPrime(i))
 		{
-			printf("%lld=%lld*%lld\n", n, i, n / i);
+			printf("%ld=%ld*%ld\n", n, i, n / i);
 			return;
 		}
 	}
